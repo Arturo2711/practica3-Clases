@@ -16,6 +16,18 @@ public class CuentaInversion {
         this.tarifa = tarifa;
         this.nombre = nombre;
     }
+    
+    // Calcula el interés y lo suma al balance
+    public double calcularIntereses() {
+        double interes = balance * tarifa;
+        balance += interes;
+        return interes;
+    }
+    
+    // Devuelve el balance actual
+    public double obtenerBalance() {
+        return balance;
+    }
 }
 
 
