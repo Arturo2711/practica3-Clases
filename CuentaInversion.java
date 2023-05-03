@@ -28,6 +28,22 @@ public class CuentaInversion {
     public double obtenerBalance() {
         return balance;
     }
+    
+    // Depósito: Suma al balance cantidad
+    public void deposito(double cantidad){
+        balance=balance+cantidad;
+    }
+    
+    //Retiro 
+    public bool retiro(double cantidad_r){
+        if(cantidad_r<balance){
+            balance = balance-cantidad_r;
+            return true;
+        }
+        else 
+            return false;
+    }
+    
 }
 
 
