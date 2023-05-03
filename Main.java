@@ -17,4 +17,12 @@ public class Main{
     
     // Retirar la cantidad de dinero de la cuenta
         cuenta.retiro(cantidadRetiro);
+    
+    //Calcular los intereses
+        double interes_calculado = obj1.calcularIntereses();
+        System.out.print(interes_calculado);
+    
+    //Imprimir el balance de la cuenta
+         double mi_balance = obj1.obtenerBalance();
+         System.out.print(mi_balance);
 }
